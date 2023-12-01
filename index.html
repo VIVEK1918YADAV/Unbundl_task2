@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Natural Nutrition &amp; Supplement Backed by Science | Näck
+    </title>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://nack.life/cdn/shop/files/favicon_1_32x32.png?v=1648470912" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label>
+            <input type="checkbox" name="" id="">
+            <div class="toggle">
+                <span class="top-line common"></span>
+                <span class="middle-line common"></span>
+                <span class="bottom-line common"></span>
+            </div>
+            <div class="slide">
+                <ul>
+                    <li><span class="nav-text">Shop Now</span></li>
+                    <li><span class="nav-text">Health Experts</span></li>
+                    <li><span class="nav-text">Naked Way</span><i class="fa-solid fa-arrow-right" style="color: #2f3237;"></i></li>
+                    <li><span class="nav-text">Näck Journals</span><i class="fa-solid fa-arrow-right" style="color: #2f3237;"></i></li>
+                    <li><span class="nav-text">About Us</span></li>
+                </ul>
+            </div>
+        </label>
+        <ul id="nav-options">
+            <li class="nav-text">Shop Now</li>
+            <li class="nav-text">Health Experts</li>
+            <li><span class="nav-text">Naked Way</span>&nbsp;<i class="fa-solid fa-angle-down down-symbol" onclick="openMenuOne()"></i></li>
+            <li><span class="nav-text">Näck Journals</span>&nbsp;<i class="fa-solid fa-angle-down down-symbol" onclick="openMenuTwo()"></i></li>
+        </ul>
+        <div id="nav-title">
+            <svg viewBox="-1 0 82 35" xmlns="http://www.w3.org/2000/svg"><g fill="#000" fill-rule="nonzero"><path d="M14.784 11.293c-.546-.632-1.36-1.179-2.424-1.625C11.304 9.225 9.845 9 8.02 9c-1.823 0-3.283.225-4.338.668-1.062.446-1.884.99-2.442 1.62-.568.638-.922 1.293-1.054 1.948C.06 13.85 0 14.336 0 14.718v18.28h4.661v-17.67c0-.19.04-.421.116-.685.066-.23.208-.444.431-.651.235-.22.586-.415 1.044-.582.464-.17 1.09-.256 1.86-.256.736 0 1.33.086 1.761.253.424.165.75.365.969.59.213.222.342.441.398.672.066.272.099.524.099.749V33H16V14.718c0-.349-.06-.826-.186-1.458-.135-.668-.48-1.33-1.03-1.967zM22 1h5v5h-5zM31 1h5v5h-5zM34.043 10.587C32.766 9.534 30.733 9 28.001 9c-1.37 0-2.563.143-3.549.426-.998.288-1.84.69-2.504 1.193-.679.517-1.18 1.13-1.49 1.825A5.343 5.343 0 0020 14.637v1.467h4.674v-.435c0-.731.22-1.335.67-1.846.426-.484 1.32-.729 2.657-.729.687 0 1.26.072 1.7.214.43.139.772.318 1.02.534.24.21.41.436.502.67.099.25.15.495.15.727v.817c0 .273-.052.512-.154.708a2.948 2.948 0 01-.405.599 1.53 1.53 0 01-.427.351 18.49 18.49 0 01-.415.212c-.11.03-.335.101-.885.302a132.853 132.853 0 01-3.607 1.243c-.695.23-1.308.43-1.85.604-1.158.405-2.064 1.1-2.693 2.07A5.775 5.775 0 0020 25.343v1.977c0 .587.104 1.215.308 1.866.214.686.636 1.322 1.254 1.889.605.554 1.434 1.02 2.465 1.383 1.022.36 2.36.542 3.973.542s2.95-.182 3.972-.542c1.03-.362 1.86-.828 2.465-1.383.617-.567 1.04-1.203 1.254-1.889A6.316 6.316 0 0036 27.32V14.637c0-1.617-.657-2.98-1.957-4.05zm-6.042 18.32c-1.319 0-2.212-.223-2.655-.664-.446-.444-.672-1.159-.672-2.127 0-.462.091-.843.27-1.13.197-.318.415-.581.632-.77.289-.228.596-.41.895-.53.465-.17.969-.341 1.494-.511.444-.143.934-.31 1.458-.5.495-.177.976-.342 1.41-.483.173-.047.353-.119.538-.215v4.14c0 .914-.23 1.618-.68 2.091-.443.464-1.347.699-2.69.699zM55.045 10.587C53.77 9.534 51.735 9 49.002 9c-1.37 0-2.563.143-3.549.426-.999.288-1.841.69-2.503 1.193-.68.516-1.18 1.13-1.49 1.825a5.35 5.35 0 00-.46 2.193v12.726c0 .558.104 1.171.308 1.824.213.687.636 1.322 1.254 1.888.604.554 1.434 1.02 2.465 1.383 1.023.36 2.36.542 3.974.542 1.614 0 2.95-.182 3.973-.542 1.031-.362 1.86-.828 2.465-1.383.618-.567 1.04-1.202 1.253-1.888.204-.654.308-1.268.308-1.824v-1.681h-4.63v.435c0 .915-.229 1.618-.68 2.092-.443.463-1.347.698-2.69.698-1.32 0-2.213-.223-2.656-.664-.446-.443-.671-1.158-.671-2.126V15.67c0-.73.22-1.335.67-1.845.425-.484 1.32-.729 2.655-.729.688 0 1.26.072 1.702.214.428.138.77.317 1.019.533.24.21.41.436.502.67.098.252.148.497.148.728v.865H57v-1.467c.003-1.618-.654-2.98-1.954-4.051zM75.808 20.988c.748-.557 1.302-1.194 1.649-1.9a5.56 5.56 0 00.58-2.477V8.989H73.35v7.002c0 .461-.038.687-.22 1.101-.154.351-.613.644-1.278.873-.14.056-5.09 1.779-5.213 1.823V0H62v33h4.64v-7.356c0-.34.077-.606.236-.807.193-.243.375-.371.592-.516.285-.18.987-.477.987-.477.343-.142 2.75-.945 3.023-1.038L75.04 33H80l-4.192-12.012z" class="fillmy"></path></g></svg>
+        </div>
+        <div id="nav-about">
+            <span class="nav-text">About Us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account svg-1" fill="none" viewBox="0 0 50 50" style="transform: translate(22px, 2px);">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor" class="">
+                </path>
+            </svg>
+            <svg class="icon icon-cart-empty" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none" style="transform: translate(14px, 2px);">
+                <path d="M19.885 3.673a.638.638 0 00-.5-.28L6.98 2.846a.646.646 0 00-.67.627.65.65 0 00.614.685l11.567.51-2.274 7.26H6.097L4.266 1.742a.653.653 0 00-.396-.493L.877.045a.638.638 0 00-.832.371.662.662 0 00.362.852l2.663 1.07 1.86 10.365a.646.646 0 00.632.538h.308l-.704 2.003a.557.557 0 00.065.5c.1.146.264.232.438.232h.494a1.984 1.984 0 00-.494 1.314c0 1.086.863 1.97 1.925 1.97 1.061 0 1.925-.884 1.925-1.97 0-.505-.188-.965-.494-1.314h4.197a1.983 1.983 0 00-.495 1.314c0 1.086.864 1.97 1.925 1.97 1.062 0 1.926-.884 1.926-1.97 0-.505-.188-.965-.495-1.314h.601a.541.541 0 00.535-.547.541.541 0 00-.535-.547H6.43l.578-1.641h9.677c.28 0 .526-.185.611-.456l2.674-8.536a.668.668 0 00-.084-.576zM7.594 18.165a.867.867 0 01-.856-.875c0-.483.384-.876.856-.876s.855.393.855.876a.867.867 0 01-.855.875zm7.058 0a.867.867 0 01-.855-.875c0-.483.384-.876.855-.876.472 0 .856.393.856.876a.867.867 0 01-.856.875z" fill="#000" fill-rule="nonzero" class=""></path>
+            </svg>
+        </div>
+    </nav>
+    <div class="content" id="content1">
+        <ul>
+            <li><span class="nav-text">Naked Philosophy</span></li>
+            <li><span class="nav-text">Naked Research</span></li>
+        </ul>
+    </div>
+    <div class="content" id="content2">
+        <ul>
+            <li><span class="nav-text">Community</span></li>
+            <li><span class="nav-text">Mental Wellbeing</span></li>
+            <li><span class="nav-text">Recipes</span></li>
+            <li><span class="nav-text">Health and Fitness</span></li>
+        </ul>
+    </div>
+    <main>
+        <section class="carousel-container">
+            <input type="radio" id="slide1" name="carousel-radio" checked>
+            <input type="radio" id="slide2" name="carousel-radio">
+            <input type="radio" id="slide3" name="carousel-radio">
+            <input type="radio" id="slide4" name="carousel-radio">
+            
+            <div class="carousel-items">
+                <div class="item carousel-item-1">
+                    <h2>Informed Choice Certified</h2>
+                    <p>High-quality Whey designed by experts to power your performance and recovery</p>
+                    <button>SHOP NOW</button>
+                </div>
+                <div class="item carousel-item-2">
+                    <h2>The Immunity Boost</h2>
+                    <p>Boost your immune system and vitality with nature's strongest antioxidant - Natural Astaxanthin</p>
+                    <button>SHOP NOW</button>
+                </div>
+                <div class="item carousel-item-3">
+                    <h2>The Power Of Plant Proteins</h2>
+                    <p>Explore ways to optimise protein intake as a vegetarian</p>
+                    <button>READ MORE</button>
+                </div>
+                <div class="item carousel-item-4">
+                    <h2>Rapid Recovery. Effective Hydration</h2>
+                    <p>Boost performance and hydration with a unique blend of full-spectrum Essential Amino Acids and electrolytes</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+            
+            <div class="carousel-indicators">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </section>
+
+        <h6 class="mid-h">honest. clean. natural</h6>
+        <h2 class="mid-h-lower">Choose Your Favourite</h2>
+        <section class="slideshow-container">
+            <div id="arrow-left" class="arrow">
+                <img width="40" height="40" src="https://img.icons8.com/ios-glyphs/30/back.png" alt="back"/>
+            </div>
+            <div id="slider">
+                <div class="slides">
+                    <img src="https://nack.life/cdn/shop/files/tsk_home_page_1_410x.jpg?v=1680075128" alt="">
+                </div>
+                <div class="slides">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg?v=1692271535" alt="">
+                </div>
+                <div class="slides">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_410x.jpg?v=1682330570" alt="">
+                </div>
+                <div class="slides">
+                    <img src="https://nack.life/cdn/shop/files/vegan-plant-protein-powder-nack-india-min_750x_1000x_9fe870d1-dcb5-439f-a696-2219a36f7fca_410x.webp?v=1656932664" alt="">
+                </div>
+                <div class="slides">
+                    <img src="https://nack.life/cdn/shop/files/nack-astaxanthin-antioxidant-immunity-boost-1-min_410x.jpg?v=1656933817" alt="">
+                </div>
+            </div>
+            <div id="arrow-right" class="arrow">
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/forward--v1.png" alt="forward--v1"/>
+            </div>
+        </section>
+
+        <section class="product-desc">
+            <div class="product-details">
+                <h6>EAA+ELECTROLYTES</h6>
+                <h2>Essential Fuel With Hydrating Electrolytes</h2>
+                <p>A potent blend of EAAs with 3.5g leucine per serving,
+                   and highly bioavailable electrolytes in pocket-sized 
+                   sachets - convenient and effective fuel to maximise 
+                   your performance and hydration.
+                </p>
+                <button>read more</button>
+            </div>
+            <div class="product-image">
+                <img src="https://nack.life/cdn/shop/files/EAA_Home_page_500x.jpg?v=1692272449" alt="">
+            </div>
+        </section>
+
+        <section class="product-desc">
+            <div class="product-image">
+                <img src="https://nack.life/cdn/shop/files/Home_Page_Image-2.jpg?v=1682403841" alt="">
+            </div>
+            <div class="product-details">
+                <h6>WHEY PROTEIN</h6>
+                <h2>Developed By Sports Nutrition Experts</h2>
+                <p>Näck’s Whey Protein is expertly formulated to 
+                   fuel your workouts, boost muscle growth, enhance 
+                   recovery and support weight management.
+                </p>
+                <button>READ MORE</button>
+            </div>
+        </section>
+
+        <section class="product-desc">
+            <div class="product-details" id="plant-protein-container" style="background-color: #f2efec;">
+                <h6>PLANT PROTEIN POWDER</h6>
+                <h2>Perfectly Balanced Amino Acids</h2>
+                <p>Our 100% plant based powder is formulated to 
+                   fuel your body with pure protein. By blending 
+                   naturally sourced yellow peas with whole grain 
+                   rice, this formula provides a complete essential
+                   amino acid profile.
+                </p>
+                <button>READ MORE</button>
+            </div>
+            <div class="product-image">
+                <img src="https://nack.life/cdn/shop/files/Nack_campaign_20220751_x730.jpg?v=1657707413" alt="">
+            </div>
+        </section>
+
+        <section class="product-desc">
+            <div class="product-image">
+                <img src="https://nack.life/cdn/shop/files/nack-astaxanthin-homepage.webp?v=1688669247" alt="">
+            </div>
+            <div class="product-details">
+                <h6>IMMUNITY BOOST</h6>
+                <h2>Nature's Strongest Antioxidant</h2>
+                <p>Boost your immune system with nature’s most 
+                   powerful antioxidant, Astaxanthin. Its unique
+                   and strong cellular protection capacity allows
+                   it to protect each cell against free radicals 
+                   and oxidative stress
+                </p>
+                <button>READ MORE</button>
+            </div>
+        </section>
+
+        <section class="product-desc" style="background-color: #f9f6ef;">
+            <div class="product-details">
+                <h6>HEALTH COACHES</h6>
+                <h2>Meet Our Experts</h2>
+                <p>Searching for an expert within nutrition, fitness 
+                   or mental health? Look no further. Our best in 
+                   class experts are just one click away and ready 
+                   to support you from the comfort of your home.
+                </p>
+                <button>READ MORE</button>
+            </div>
+            <div class="product-image">
+                <img src="https://nack.life/cdn/shop/files/meet-our-health-experts-at-nack-india_x600.webp?v=1688669553" alt="">
+            </div>
+        </section>
+
+        <section id="simple-details">
+            <div>
+                <h2 class="text-h2">The Pursuit Of Truly Naked</h2>
+                <p>No odd ingredient combinations. No questionable scientific reports.
+                No false claims or hidden agendas. Just carefully selected 
+                natural active ingredients, always backed by science. Born 
+                in Sweden and raised in India, our journey started in 2020 
+                with the purpose to make the complex world of supplements 
+                easy to understand, access and benefit from.
+                </p>
+                <a href="#" class="text-a">LEARN MORE ABOUT OUR PURSUIT</a>
+            </div>
+        </section>
+
+        <section id="nack-journal">
+            <h2 class="text-h2">The Näck Journal</h2>
+            <div id="nack-container">
+                <div class="journal-container">
+                    <div class="nack-image-container">
+                        <img src="https://nack.life/cdn/shop/articles/desktopcover_720x.jpg?v=1690803407" alt="">
+                    </div>
+                    <div class="nack-a-tag">
+                        <a href="#">Athletes</a> 
+                        <a href="#">community</a>
+                        <a href="#">running</a>
+                    </div>
+                    <h3 class="nack-h-tag">The Starting Line: Running Tips For Beginners</h3>
+                    <p class="nack-p-tag">Running is more than just putting one foot in front
+                       of the other; it's a journey of self-discovery, endurance,
+                       and empowerment. From the brisk morning jogs of beginners
+                       to the...
+                    </p>
+                    <div class="read-more-container">
+                        <a href="#" class="text-a read-more">read more</a>
+                    </div>
+                </div>
+                <div class="journal-container" style="margin: 0 20px 0 20px;">
+                    <div class="nack-image-container">
+                        <img src="https://nack.life/cdn/shop/articles/yoga_day_journal-desktop_720x.jpg?v=1687346234" alt="">
+                    </div>
+                    <div class="nack-a-tag">
+                        <a href="#">community</a>
+                        <a href="#">internationalyogaday</a>
+                        <a href="#">minudfulness</a>
+                        <a href="#">yoga</a>
+                    </div>
+                    <h3 class="nack-h-tag">Beyond The Yoga Mat</h3>
+                    <p class="nack-p-tag">Content warning: The following article mentions 
+                       mental illness and eating disorders. We associate 
+                       Yoga with physical postures, breathing exercises, 
+                       and meditation - all things practised on a mat. 
+                       However, the...
+                    </p>
+                    <div class="read-more-container">
+                        <a href="#" class="text-a read-more">read more</a>
+                    </div>
+                </div>
+                <div class="journal-container">
+                    <div class="nack-image-container">
+                        <img src="https://nack.life/cdn/shop/articles/Passion-for-Progress-Desktop_720x.jpg?v=1685529026" alt="">
+                    </div>
+                    <div class="nack-a-tag">
+                        <a href="#">community</a>
+                        <a href="#">fitness</a>
+                        <a href="#">fitnessinspiration</a>
+                        <a href="#">trainers</a>
+                    </div>
+                    <h3 class="nack-h-tag">Passion For Progress: Practices Fitness Trainers Swear By</h3>
+                    <p class="nack-p-tag">How many of us, at some point in our lives, believed
+                       that success and greatness belong to the few gifted 
+                       ones? That there are prerequisites to greatness some 
+                       people are just born with. When you listen to the great 
+                       ones though, you realise they 
+                    </p>
+                    <div class="read-more-container">
+                        <a href="#" class="text-a read-more">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>        
+        <div id="main-footer-part">
+            <div id="image-and-icon">
+                <img src="https://nack.life/cdn/shop/files/NACK_LOGO_white_NoTagline_100x.png?v=1638202074" alt="">
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f" style="color: #ebedf0;"></i></li>
+                    <li><i class="fa-brands fa-instagram" style="color: #eceff3;"></i></li>
+                    <li><i class="fa-brands fa-youtube" style="color: #e8ecf2;"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in" style="color: #edeff2;"></i></li>
+                </ul>
+            </div>
+            <div id="about">
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Näck Active</a></li>
+                    <li><a href="#">Näck Beauty</a></li>
+                    <li><a href="#">Näck Health</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div id="form-part">
+                <h3 style="color: #e8ecf2;">Stay in Touch</h3>
+                <form action="">
+                    <div id="form-email">
+                        <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div id="label-part">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <label for="privacy" style="color: white">I have read and accepted the Näck privacy policy.</label>
+                    </div>
+                    <button id="form-button">join now</button>
+                </form>
+            </div>
+        </div>
+        <div id="copyright-part">&copy; 2023 Näck RIGHTS RESERVED.</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
